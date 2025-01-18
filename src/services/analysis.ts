@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { GoogleGenerativeAI } from "@google/generative-ai";
 import { api } from "./api";
 import OpenAI from 'openai/index.mjs';
 
