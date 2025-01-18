@@ -254,4 +254,3 @@ For support, email [sajan.writings@gmail.com].
 - CoinGecko API
 - NewsData API
 - Open source contributors
-

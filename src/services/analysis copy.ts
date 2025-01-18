@@ -1,17 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { api } from "./api";
-import OpenAI from 'openai/index.mjs';
 
-// OpenAI
-const client = new OpenAI({
-  apiKey: 'sk-Ts_id--nd5BpadKCW8Krug',
-  baseURL: 'https://chatapi.akash.network/api/v1',
-  dangerouslyAllowBrowser: true
-});
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API);
 
-//const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API);
-//const genAI = new GoogleGenerativeAI(import.meta.env.VITE_AKASH_APIKEY);
-//console.log ("API =", genAI)
 interface TechnicalIndicators {
   currentPrice: number;
   price_change_24h: number;
@@ -299,7 +290,7 @@ class AnalysisService {
     news: any[],
     sentiment: any
   ): Promise<string> {
- try {
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const prompt = `
       Act as an expert quantitative analyst and cryptocurrency trader. Analyze the following comprehensive market data for ${crypto} and provide a detailed strategic analysis:
@@ -382,21 +373,8 @@ class AnalysisService {
       Remove any markdown formatting and ensure all price levels are properly formatted with $ symbol.
     `;
 
-    const response = await client.chat.completions.create({
-      model: 'nvidia-Llama-3-1-Nemotron-70B-Instruct-HF',
-      messages: [
-        {
-          role: 'system',
-          content: prompt
-        }]
-    });
-    // return result.response.text();
-    return response.choices[0].message.content || "No data found";
-
-  } catch (error) {
-    console.error('Error calling Akash API:', error);
-    throw error;
-  }
+    const result = await model.generateContent(prompt);
+    return result.response.text();
   }
 
   private interpretRSI(rsi: number): string {
@@ -566,7 +544,6 @@ class AnalysisService {
         crypto,
         technicalIndicators,
         newsItems, // Pass the news array
-        //content,
         sentiment
       );
 

@@ -92,7 +92,7 @@ export default function App() {
                 <SelectContent>
                   {activeFeaturedCoins.map(({ id, symbol }) => (
                     <SelectItem key={id} value={id}>
-                      {symbol}/USD
+                      {symbol}/USDT
                     </SelectItem>
                   ))}
                 </SelectContent>

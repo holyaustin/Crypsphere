@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Brain, TrendingUp, TrendingDown, Activity, Target, AlertTriangle, Clock, BarChart, LineChart, PieChart } from 'lucide-react';
-import { analysisService } from '../services/analysis';
+import { analysisService } from '@/services/analysis';
 import { motion } from 'framer-motion';
 import { PredictionData } from '@/services/types';
 
