@@ -31,6 +31,16 @@ export const TradingView: React.FC<TradingViewProps> = ({ crypto, timeframe, pri
         'polkadot': 'DOTUSDT',
         'injective-protocol': 'INJUSDT',
         'render-token': 'RENDERUSDT',
+        'starknet': 'STRKUSDT',  
+        'dogecoin': 'DOGEUSDT',  
+        'uniswap': 'UNIUSDT',  
+        'aptos': 'APTUSDT',  
+        'sui': 'SUIUSDT',  
+        'near': 'NEARUSDT',  
+        'aave': 'AAVEUSDT',
+        'filcoin': 'FILUSDT',
+        'worldcoin': 'WLDUSDT',
+
       };
 
       // Use mapped symbol if available, otherwise construct it

@@ -18,7 +18,7 @@ A complete real-time cryptocurrency analysis platform that combines technical an
 
 ## Overview
 
-A Next.js-based cryptocurrency analysis platform that provides real-time market insights, technical analysis, and AI-Agent powered trading recommendations. The platform combines multiple data sources and advanced algorithms to deliver comprehensive market analysis.
+A Web3-based cryptocurrency analysis platform that provides real-time market insights, technical analysis, and AI-Agent powered trading recommendations. The platform combines multiple data sources and advanced algorithms to deliver comprehensive market analysis.
 
 ### Core Features
 - Real-time price tracking and analysis
@@ -47,6 +47,8 @@ A Next.js-based cryptocurrency analysis platform that provides real-time market 
 - TensorFlow.js for ML models
 - News API integration
 - CoinGecko API integration
+- Gemini API
+- Akash API
 
 ### Data Flow
 1. Real-time price data via WebSocket
