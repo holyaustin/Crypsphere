@@ -1,14 +1,24 @@
 import { FeaturedCoin } from './types';
 
 const DEFAULT_FEATURED_COINS: FeaturedCoin[] = [
+  { id: 'starknet', symbol: 'STRK', name: 'Starknet', isActive: true },  
   { id: 'bitcoin', symbol: 'BTC', name: 'Bitcoin', isActive: true },
   { id: 'ethereum', symbol: 'ETH', name: 'Ethereum', isActive: true },
   { id: 'binancecoin', symbol: 'BNB', name: 'BNB', isActive: true },
   { id: 'cardano', symbol: 'ADA', name: 'Cardano', isActive: true },
   { id: 'solana', symbol: 'SOL', name: 'Solana', isActive: true },
+  { id: 'dogecoin', symbol: 'DOGE', name: 'DogeCoin', isActive: true },  
+  { id: 'uniswap', symbol: 'UNI', name: 'Unisawp', isActive: true },  
+  { id: 'aptos', symbol: 'APT', name: 'Aptos', isActive: true },  
+  { id: 'sui', symbol: 'SUI', name: 'Sui', isActive: true },  
+  { id: 'near', symbol: 'NEAR', name: 'Near', isActive: true },  
+  { id: 'aave', symbol: 'AAVE', name: 'Aave', isActive: true },
+  { id: 'render', symbol: 'RENDER', name: 'Render', isActive: true },
+  { id: 'filcoin', symbol: 'FIL', name: 'Filcoin', isActive: true },
+  { id: 'worldcoin', symbol: 'WLD', name: 'Worldcoin', isActive: true },
 ];
 
-const MAX_ACTIVE_COINS = 5;
+const MAX_ACTIVE_COINS = 10;
 
 class FeaturedCoinsService {
   private readonly STORAGE_KEY = 'featured_coins';

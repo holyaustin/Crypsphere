@@ -38,7 +38,7 @@ export const FeaturedCoinsManager: React.FC<FeaturedCoinsManagerProps> = ({
   const searchContainerRef = useRef<HTMLDivElement>(null);
 
   const activeCoinsCount = coins.filter(coin => coin.isActive).length;
-  const MAX_ACTIVE_COINS = 5;
+  const MAX_ACTIVE_COINS = 15;
 
   useEffect(() => {
     const fetchMetadata = async () => {

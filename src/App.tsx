@@ -17,7 +17,7 @@ import { featuredCoinsService } from './services/featuredCoins'
 import { FeaturedCoinsManager } from './components/FeaturedCoinsManager';
 
 export default function App() {
-  const [crypto, setCrypto] = useState('bitcoin')
+  const [crypto, setCrypto] = useState('starknet')
   const [news, setNews] = useState<NewsItem[]>([])
   const [price, setPrice] = useState<CryptoPrice>({
     price: 0,

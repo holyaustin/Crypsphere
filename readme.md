@@ -1,6 +1,6 @@
 # Crypsphere
 
-A complete real-time cryptocurrency analysis platform that combines technical analysis, sentiment analysis, trading volume data, news trends, and AI-powered predictions to provide comprehensive market insights and trading recommendations.
+A complete real-time cryptocurrency analysis platform that combines technical analysis, sentiment analysis, trading volume data, news trends, and AI-Agent powered predictions to provide comprehensive market insights and trading recommendations.
 
 ## Try Out Here: https://crypsphere.vercel.app/
 (Note: You may hit the rate limit, as this is using Coingeko free API.)
@@ -18,13 +18,13 @@ A complete real-time cryptocurrency analysis platform that combines technical an
 
 ## Overview
 
-A Next.js-based cryptocurrency analysis platform that provides real-time market insights, technical analysis, and AI-powered trading recommendations. The platform combines multiple data sources and advanced algorithms to deliver comprehensive market analysis.
+A Next.js-based cryptocurrency analysis platform that provides real-time market insights, technical analysis, and AI-Agent powered trading recommendations. The platform combines multiple data sources and advanced algorithms to deliver comprehensive market analysis.
 
 ### Core Features
 - Real-time price tracking and analysis
 - Multiple timeframe support (1H, 4H, 1D, 1W, 1M)
 - Advanced technical analysis with multiple indicators
-- AI-powered price predictions
+- AI-Agent powered price predictions
 - Sentiment analysis from news and social media
 - Risk assessment and management
 - Automated trading strategy generation
@@ -242,15 +242,5 @@ const CACHE_DURATION = {
 
 MIT License - see LICENSE.md for details
 
-## Support
-
-For support, email [sajan.writings@gmail.com].
-
 ---
 
-## Acknowledgments
-
-- TensorFlow.js team
-- CoinGecko API
-- NewsData API
-- Open source contributors
