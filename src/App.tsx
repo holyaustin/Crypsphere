@@ -81,7 +81,7 @@ export default function App() {
       <div className="container mx-auto p-4 text-white min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
         {/* Header Section - Made responsive */}
         <div className='font-semibold text-4xl mt-3 mb-7'>
-        Crypsphere <span className='mr-7 pr-7 text-xl text-yellow-600'>crypto trading Analysis using AI Agent</span>
+        Crypsphere <span className='mr-7 pr-7 text-xl text--600'>crypto trading Analysis using AI Agent</span>
         </div>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
           <div className="flex flex-col w-full md:w-auto gap-4">
